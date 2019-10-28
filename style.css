@@ -1,0 +1,195 @@
+.btn{
+  font-family: Karla, sans-serif;
+  margin: 2px;
+  width: 210px;
+}
+
+.btnCTA{
+  font-weight:bold;
+  color: white;
+  background-color: darkgray;
+}
+
+.btnSCND{
+  background-color: lightgrey;
+}
+
+
+/*NavBar Code START*/
+
+.bg-light{
+    background-color:white !important;
+}
+
+.navbar-brand{
+  margin-left: 2rem;
+}
+
+.navbar{
+  height: 100px;
+}
+
+.justify-content-end {
+-ms-flex-pack: end!important;
+margin:2%;
+margin-left: auto;
+margin-right: 2%;
+}
+
+.nav-item{
+  margin:15px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: goldenrod !important;
+  background-color: transparent;
+}
+
+
+.navbar-nav{
+  font-family: Karla;
+  
+}
+
+.nav-link{
+  color:gray !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.9) !important;
+}
+
+li a:hover { color: black !important; background-color: white; }
+
+/*Intro Section START*/
+
+.introContainer{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 63%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.introPhotoContainer{
+  display: flex;
+}
+
+.introPhoto{
+  height: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.introTextContainer{
+  display:flex;
+  flex-direction: column;
+  margin-top:auto;
+  margin-left: 3%;
+}
+
+#introName {
+  font-family: 'Karla', sans-serif;
+  font-size: 28px;
+  display: inline-block;
+  margin: 0%;
+  font-weight:500;
+}
+
+#introRole {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 400;
+}
+
+
+#introSummary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  width: 436px;
+  display: block;
+  font-weight: 200;
+  box-sizing: border-box;
+}
+
+.introBtnContainer{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#btn1{
+  margin-left: 0;
+}
+
+.introBtn{
+  margin-bottom: 0;
+}
+
+/*Work Section START*/
+
+.workHeader{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+.workCardContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  border: solid 1px orange;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workTextContainerRight{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-left: 5%;
+  margin-bottom: 8px;
+}
+
+.workTextContainerLeft{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 8px;
+  margin-right: 5%;
+  text-align: right;
+}
+
+.workTitle{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+.workSummary{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.workBtnLeft{
+  margin-left:auto;
+  margin-right: 0;
+}
+
+.workPhotoContainer{
+  display: flex;
+  background-color: lightgrey;
+}
+
+.wriPhoto{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
