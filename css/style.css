@@ -202,3 +202,60 @@ li a:hover { color: black !important; background-color: white; }
 
 
 
+/*ABOUT.HTML*/
+
+#myStory{
+  margin-top:0;
+}
+
+.aboutContainer{
+  display: grid;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+.aboutCardRight{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.aboutPhotoContainer{
+}
+
+.aboutPhoto{
+  height: 274px;
+}
+
+.aboutTextRight{
+  margin-top: auto;
+  margin-left: 3%;
+}
+
+.aboutTextLeft{
+  margin-top: auto;
+  margin-right:3%;
+  text-align: right;
+}
+
+.aboutCardLeft{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
+.aboutHeader{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: .75rem;
+  font-size: 18px;
+}
+
+.aboutParagraph{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
