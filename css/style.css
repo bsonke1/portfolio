@@ -239,7 +239,7 @@ li a:hover { color: black !important; background-color: white; }
 
 /*ABOUT.HTML*/
 
-#myStory{
+.myStory{
   margin-top:0;
 }
 
@@ -257,6 +257,10 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 .aboutPhotoContainer{
+}
+
+.aboutMobilePhoto{
+  display:none;
 }
 
 .aboutPhoto{
@@ -452,4 +456,37 @@ li a:hover { color: black !important; background-color: white; }
 .fixed{
   display: none;
 }
+
+.myStory{
+margin:0;
+}
+
+.aboutContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.aboutCardRight{
+  grid-template-columns: 1fr;
+}
+
+.aboutCardLeft{
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.aboutMobilePhoto{
+  display:block;
+}
+
+.aboutDesktopPhoto{
+  display:none;
+}
+
+.aboutTextLeft{
+  text-align:center;
+  margin:0;
+}
+
+
 }
