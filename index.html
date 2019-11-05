@@ -2,7 +2,7 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:300,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,14 +31,14 @@
                 <img class="introPhoto" src="images/headshotPhoto.png">
         </div>
         <div class="introTextContainer">
-            <h1 id="introName">Brooke Sonke</h1>
-            <h1 id="introRole">UX/UI Designer</h1>
-            <p id="introSummary"> My journey begins with an extensive background in behavior psychology, a proven passion for all things art, and a profound love for solving puzzles, paths which have collectively led me to 
+            <h1 class="introName">Brooke Sonke</h1>
+            <h1 class="introRole">UX/UI Designer</h1>
+            <p class="introSummary"> My journey begins with an extensive background in behavior psychology, a proven passion for all things art, and a profound love for solving puzzles, paths which have collectively led me to 
             UX/UI Design. 
             <br><br>
             With gratitude, I get to use my skills and passions to creatively translate user needs into delightful, human-centered products. </p>
             <div class="introBtnContainer">
-                    <a id="btn1" class="btn btnCTA introBtn" href="contact.html">Contact Me
+                    <a class="btn btnCTA introBtn btn1" href="contact.html">Contact Me
                     </a>
                 <a href ="#" class="btn btnSCND introBtn">View Work</a>
             </div>
@@ -49,41 +49,65 @@
     <h1 class="workHeader">Work</h1>
     <div class="workSectionContainer">
     <div class="workCardContainer">
-        <div class="workPhotoContainer">
+        <div class="workPhotoContainer Container1">
             <img class="workPhoto" src="images/artpassImg.png">
         </div>
-        <div class="workTextContainerRight">
+        <div class="workTextContainerRight workMobileTextContainer">
             <h3 class="workTitle">ARTPASS</h3>
             <p class="workSummary">Mobile app designed to make local arts events easily discoverable and shareable.</p>
             <p class="workRole"><i>Role:</i> UX/UI Designer, FE Developer</p>
             <p class="workRole workTools"><i>Tools:</i> Adobe XD, Illustrator, Visual Studio Code, Github</p>
-            <a href="https://docs.google.com/presentation/d/e/2PACX-1vQVRcz27dC9J2FFP-HeqFI6hY3wqgbhl-y1yL2sRnvIrO1DPQPRFQCA1KaYj4mLgpFxkDOjWVSiG82X/pub?start=false&loop=false&delayms=3000" class="btn btnCTA">View Case Study</a>
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vQVRcz27dC9J2FFP-HeqFI6hY3wqgbhl-y1yL2sRnvIrO1DPQPRFQCA1KaYj4mLgpFxkDOjWVSiG82X/pub?start=false&loop=false&delayms=3000" target="_blank" class="btn btnCTA">View Case Study</a>
         </div>     
     </div>
     <div class="workCardContainer">
-        <div class="workTextContainerLeft">
-            <h3 class="workTitle">Blossom</h3>
-            <p class="workSummary">A virtual garden and assistant app to help users take care of their real life plants.</p>
+            <div class="workPhotoContainer Container2 workMobilePhoto">
+                    <img class="workPhoto" src="images/blossomDisplay@2x.png">
+            </div>
+        <div class="workTextContainerLeft workMobileTextContainer">
+            <h3 class="workTitle">World Resources Institute</h3>
+            <p class="workSummary">Redesign of the World Resources Institute desktop and mobile sites with a &quot;web design 3.0&quot; approach.</p>
             <p class="workRole"><i>Role:</i> UX/UI Designer</p>
             <p class="workRole workTools"><i>Tools:</i> Adobe XD, Illustrator, InVision, Google Survey</p>
-            <a href="https://drive.google.com/file/d/1pwUqf2oWJPj2pHb38qeOQIZnb03ejpB3/view?usp=sharing" class="btn btnCTA workBtnLeft">View Case Study</a>
+            <a href="https://drive.google.com/file/d/1YxLBnT3u1WWxCaV3hyJAnhgmeIAKmGKD/view?usp=sharing" target="_blank" class="btn btnCTA workBtnLeft">View Case Study</a>
         </div>
-        <div class="workPhotoContainer">
+        <div class="workPhotoContainer Container2 workDesktopPhoto">
             <img class="workPhoto" src="images/blossomDisplay@2x.png">
         </div>
     </div>    
     <div class="workCardContainer">
-        <div class="workPhotoContainer">
+        <div class="workPhotoContainer Container3">
             <img class="workPhoto" src="images/wriDisplay.png">
         </div>
-        <div class="workTextContainerRight">
-            <h3 class="workTitle">World Resources Institute</h3>
-            <p class="workSummary">Redesign of the World Resources Institute desktop and mobile sites with a &quot;web design 3.0&quot; approach. </p>
+        <div class="workTextContainerRight workMobileTextContainer">
+            <h3 class="workTitle">Blossom</h3>
+            <p class="workSummary">A virtual garden and assistant app to help users take care of their real life plants.</p>
             <p class="workRole"><i>Role:</i> UX/UI Designer</p>
             <p class="workRole workTools"><i>Tools:</i> Adobe XD, Illustrator, InVision, Google Survey</p>
-            <a href="https://drive.google.com/file/d/1YxLBnT3u1WWxCaV3hyJAnhgmeIAKmGKD/view?usp=sharing" class="btn btnCTA">View Case Study</a>
+            <a href="https://drive.google.com/file/d/1pwUqf2oWJPj2pHb38qeOQIZnb03ejpB3/view?usp=sharing" target="_blank" class="btn btnCTA ">View Case Study</a>
         </div>     
     </div>
 </div>
 </section>
+
+<div class="fixed">
+    <a id="resume" target="_blank" href="https://drive.google.com/file/d/1aXa8pSzmipd5cy1PlE63WLD_R6PtbUuE/view?usp=sharing">
+      <img id="resumeicon" class="fixedIcons" src="images/Resume Icon.png" alt="Resume">
+  </a>
+  <a id ="linkedin" target="_blank" href="https://www.linkedin.com/in/brooke-sonke/" >
+      <img id="linkedinIcon" class="fixedIcons" src="images/linkedinIcon.png" alt="LinkedIn">
+  </a>
+  <a id="behance" target="_blank" href="https://www.behance.net/brookesonke">
+      <img id="behanceIcon" class="fixedIcons" src="images/behanceIcon.png" alt="Behance">
+  </a>
+  <a id="dribbble" target="_blank" href="https://dribbble.com/bsonke">
+      <img id="dribbbleIcon" class="fixedIcons" src="images/dribbbleIcon.png" alt="Dribbble">
+  </a>
+  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>

@@ -1,3 +1,5 @@
+
+
 .btn{
   font-family: Karla, sans-serif;
   margin: 2px;
@@ -7,11 +9,22 @@
 .btnCTA{
   font-weight:bold;
   color: white;
-  background-color: darkgray;
+  background-color: #736F49;
 }
 
 .btnSCND{
-  background-color: lightgrey;
+  border: #736F49 solid 1px;
+  color: #736F49;
+  font-weight: bold;
+}
+
+.btnCTA:hover{
+  background-color: #395359;
+  color: white;
+}
+.btnSCND:hover{
+  border: #395359 solid 1px;
+  color: #395359;
 }
 
 
@@ -58,6 +71,9 @@ margin-right: 2%;
 
 li a:hover { color: black !important; background-color: white; }
 
+
+
+
 /*Intro Section START*/
 
 .introContainer{
@@ -84,18 +100,18 @@ li a:hover { color: black !important; background-color: white; }
   display:flex;
   flex-direction: column;
   margin-top:auto;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
-#introName {
+.introName {
   font-family: 'Karla', sans-serif;
   font-size: 28px;
   display: inline-block;
   margin: 0%;
-  font-weight:500;
+  font-weight:700;
 }
 
-#introRole {
+.introRole {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   display: inline-block;
@@ -103,9 +119,9 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 
-#introSummary {
+.introSummary {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   width: 436px;
   display: block;
   font-weight: 200;
@@ -117,7 +133,7 @@ li a:hover { color: black !important; background-color: white; }
   grid-template-columns: 1fr 1fr;
 }
 
-#btn1{
+.btn1{
   margin-left: 0;
 }
 
@@ -173,7 +189,7 @@ li a:hover { color: black !important; background-color: white; }
 .workRole{
   font-family: 'Karla', sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -193,7 +209,22 @@ li a:hover { color: black !important; background-color: white; }
 
 .workPhotoContainer{
   display: flex;
-  background-color: lightgrey;
+}
+
+.workMobilePhoto{
+  display: none;
+}
+
+.Container1{
+  background-color: #7B9EA6;
+}
+
+.Container2{
+  background-color: #B396A1;
+}
+
+.Container3{
+  background-color: #F2EBA7;
 }
 
 .workPhoto{
@@ -230,6 +261,7 @@ li a:hover { color: black !important; background-color: white; }
 
 .aboutPhoto{
   height: 274px;
+  border: solid 1px #395359;
 }
 
 .aboutTextRight{
@@ -262,4 +294,162 @@ li a:hover { color: black !important; background-color: white; }
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 0;
+}
+
+/*FIXED Section Start*/
+#linkedin{
+  display: block;
+}
+
+#linkedinIcon{
+  width:25px;
+  height:25px;
+}
+
+#behance{
+  display: block;
+}
+
+#behanceIcon{
+  width:25px;
+  height:25px;
+}
+
+#dribbble{
+  display: block;
+}
+
+#dribbbleIcon{
+  width:25px;
+  height:25px;
+}
+
+#resume{
+  display:block;
+}
+
+#resumeicon{
+  width:25px;
+  height:25px;
+}
+
+.fixed {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  padding-right: 2%;
+}
+
+.fixedIcons{
+  margin: 3px;
+}
+
+
+@media only screen and (max-width: 600px) {
+.navbar{
+  height: 70px;
+}
+
+.navbar-collapse{
+  text-align:right;
+  margin-left: 60%;
+  border-radius: 15px 0 0 15px;
+}
+
+/*Intro Section*/
+
+.introPhoto{
+  height: 275px;
+}
+
+.introContainer{
+  grid-template-columns: 1fr;
+  width: 100%;
+  text-align: center;
+}
+
+.introTextContainer{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.introName{
+  font-size: 28px;
+}
+
+.introRole{
+  font-size: 18px;
+}
+
+.introSummary{
+  font-size: 16px;
+}
+
+.introBtnContainer{
+  grid-template-columns: 1fr;
+
+}
+
+.btn{
+  width:100%;
+}
+
+.workHeader{
+  font-size: 28px;
+}
+
+.workCardContainer{
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.workPhoto{
+  height: 250px;
+}
+
+.workMobileTextContainer{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.workMobilePhoto{
+  display: flex;
+}
+
+.workDesktopPhoto{
+  display: none
+}
+
+.workHeader{
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.workTitle{
+  font-size:22px;
+}
+
+.workSummary{
+  font-size: 16px;
+}
+
+.btn{
+  margin-left:0;
+  margin-right:0;
+}
+
+.introBtn{
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fixed{
+  display: none;
+}
 }
