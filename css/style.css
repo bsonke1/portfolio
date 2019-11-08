@@ -90,7 +90,6 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 .introPhotoContainer{
-  display: flex;
   border: 4px #F2EBA7 solid;
 }
 
@@ -439,7 +438,11 @@ li a:hover { color: black !important; background-color: white; }
 
 /*Intro Section*/
 
-
+.introContainer{
+  grid-template-columns: 1fr;
+  width: 90%;
+  text-align: center;
+}
 
 .introPhoto{
   height: 350px;
@@ -452,14 +455,6 @@ li a:hover { color: black !important; background-color: white; }
 
 .introPhotoContainer{
   border: none;
-}
-
-.introContainer{
-  grid-template-columns: 1fr;
-  width: 90%;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .introTextContainer{
@@ -486,7 +481,7 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 .btn{
-  width:100%;
+  width:90%;
 }
 
 .workHeader{
