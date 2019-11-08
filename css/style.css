@@ -9,22 +9,26 @@
 .btnCTA{
   font-weight:bold;
   color: white;
-  background-color: #736F49;
+  background-color: #395359;
 }
 
 .btnSCND{
-  border: #736F49 solid 1px;
-  color: #736F49;
+  border: #395359 solid 1px;
+  color:  #395359;
   font-weight: bold;
 }
 
 .btnCTA:hover{
-  background-color: #395359;
+  background-color: #736F49;
   color: white;
 }
 .btnSCND:hover{
-  border: #395359 solid 1px;
-  color: #395359;
+  border: #736F49 solid 1px;
+  color: #736F49;
+}
+
+a:link{
+  color: #736F49; 
 }
 
 
@@ -84,8 +88,13 @@ li a:hover { color: black !important; background-color: white; }
   margin-left: auto;
 }
 
+.introPhotoBorder{
+  border: 3px #7B9EA6 solid;
+}
+
 .introPhotoContainer{
   display: flex;
+  border: 4px #F2EBA7 solid;
 }
 
 .introPhoto{
@@ -263,9 +272,19 @@ li a:hover { color: black !important; background-color: white; }
   display:none;
 }
 
-.aboutPhoto{
+.aboutPhoto1{
   height: 274px;
-  border: solid 1px #395359;
+  border: solid 4px #B396A1;
+}
+
+.aboutPhoto2{
+  height: 274px;
+  border: solid 4px #F2EBA7;
+}
+
+.aboutPhoto3{
+  height: 274px;
+  border: solid 4px #7B9EA6;
 }
 
 .aboutTextRight{
@@ -300,41 +319,52 @@ li a:hover { color: black !important; background-color: white; }
   margin-bottom: 0;
 }
 
+/*CONTACT.HTML*/
+
+.ContactContainer{
+  width:75%;
+  background-color: #7B9EA6;
+  height:450px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display:flex;
+  border: 10px solid #B396A1;
+}
+
+.contactTextContainer{
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  padding: 50px;
+}
+
+.contactHeader{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+.contactText{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+
+
+.contactIcons{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+
 /*FIXED Section Start*/
-#linkedin{
-  display: block;
-}
 
-#linkedinIcon{
-  width:25px;
-  height:25px;
-}
-
-#behance{
-  display: block;
-}
-
-#behanceIcon{
-  width:25px;
-  height:25px;
-}
-
-#dribbble{
-  display: block;
-}
-
-#dribbbleIcon{
-  width:25px;
-  height:25px;
-}
-
-#resume{
+.fIcons{
   display:block;
-}
-
-#resumeicon{
-  width:25px;
-  height:25px;
 }
 
 .fixed {
@@ -346,8 +376,58 @@ li a:hover { color: black !important; background-color: white; }
 
 .fixedIcons{
   margin: 3px;
+  width:27px;
+  height:27px;
 }
 
+@media only screen and (max-width: 750px){
+  .myStory{
+    margin:0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .aboutContainer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .aboutCardRight{
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .aboutCardLeft{
+    grid-template-columns: 1fr;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .aboutMobilePhoto{
+    display:block;
+  }
+  
+  .aboutDesktopPhoto{
+    display:none;
+  }
+  
+  .aboutTextLeft{
+    text-align:center;
+    margin:0;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .aboutTextRight{
+    margin:0;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
 .navbar{
@@ -363,7 +443,7 @@ li a:hover { color: black !important; background-color: white; }
 /*Intro Section*/
 
 .introPhoto{
-  height: 275px;
+  height: 350px;
 }
 
 .introContainer{
@@ -457,36 +537,25 @@ li a:hover { color: black !important; background-color: white; }
   display: none;
 }
 
-.myStory{
-margin:0;
+.ContactContainer{
+  width:90%;
+}
+.contactHeader{
+  font-size: 32px;
 }
 
-.aboutContainer {
-  width: 100%;
-  text-align: center;
+.contactText{
+  font-size: 18px;
 }
 
-.aboutCardRight{
-  grid-template-columns: 1fr;
+.contactName{
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.aboutCardLeft{
-  grid-template-columns: 1fr;
-  margin: 0;
+.contactIcons{
+  height:35px;
+  width: 35px;
+  margin: 7px;
 }
-
-.aboutMobilePhoto{
-  display:block;
-}
-
-.aboutDesktopPhoto{
-  display:none;
-}
-
-.aboutTextLeft{
-  text-align:center;
-  margin:0;
-}
-
-
 }
