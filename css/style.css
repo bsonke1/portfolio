@@ -441,7 +441,9 @@ li a:hover { color: black !important; background-color: white; }
 .introContainer{
   grid-template-columns: 1fr;
   width: 90%;
-  text-align: center;
+  text-align:center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .introPhoto{
@@ -473,6 +475,7 @@ li a:hover { color: black !important; background-color: white; }
 
 .introSummary{
   font-size: 16px;
+  width: 100%;
 }
 
 .introBtnContainer{
@@ -480,8 +483,16 @@ li a:hover { color: black !important; background-color: white; }
 
 }
 
+.introBtn{
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .btn{
   width:90%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .workHeader{
@@ -493,7 +504,8 @@ li a:hover { color: black !important; background-color: white; }
   margin-top: 30px;
   margin-bottom: 20px;
   width:90%;
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .workPhoto{
@@ -529,16 +541,7 @@ li a:hover { color: black !important; background-color: white; }
   font-size: 16px;
 }
 
-.btn{
-  margin-left:0;
-  margin-right:0;
-}
 
-.introBtn{
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
 .fixed{
   display: none;
