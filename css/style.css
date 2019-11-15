@@ -85,6 +85,7 @@ li a:hover { color: black !important; background-color: white; }
   margin-left: auto;
 }
 
+/*
 .introPhotoBorder{
   border: 3px #7B9EA6 solid;
 }
@@ -92,6 +93,7 @@ li a:hover { color: black !important; background-color: white; }
 .introPhotoContainer{
   border: 4px #F2EBA7 solid;
 }
+*/
 
 .introPhoto{
   height: 475px;
@@ -225,11 +227,11 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 .Container2{
-  background-color: #B396A1;
+  background-color: #F2EBA7;
 }
 
 .Container3{
-  background-color: #F2EBA7;
+  background-color: #B396A1;
 }
 
 .workPhoto{
