@@ -244,6 +244,7 @@ li a:hover { color: black !important; background-color: white; }
 
 
 
+
 /*ABOUT.HTML*/
 
 .myStory{
@@ -321,7 +322,7 @@ li a:hover { color: black !important; background-color: white; }
 
 .ContactContainer{
   width:75%;
-  background-color: #7B9EA6;
+  /*background-color: #7B9EA6;*/
   height:450px;
   margin-right: auto;
   margin-left: auto;
@@ -356,6 +357,7 @@ li a:hover { color: black !important; background-color: white; }
 .contactHeader{
   font-family: 'Karla', sans-serif;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .contactText{
@@ -436,11 +438,11 @@ li a:hover { color: black !important; background-color: white; }
 /*CSS Animations*/
 
 .fade-in {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
 }
 @keyframes fadeIn {
   0% {
