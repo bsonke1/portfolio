@@ -426,13 +426,13 @@ li a:hover { color: black !important; background-color: white; }
   position: fixed;
   top: 50%;
   right: 0;
-  padding-right: 2%;
+  padding-right: 7%;
 }
 
 .fixedIcons{
   margin: 3px;
-  width:27px;
-  height:27px;
+  width:35px;
+  height:35px;
 }
 
 /*CSS Animations*/
