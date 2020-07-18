@@ -4,7 +4,7 @@
 .btn{
   font-family: Karla, sans-serif;
   margin: 2px;
-  width: 210px;
+  width: 215px;
 }
 
 .btnCTA{
@@ -328,7 +328,6 @@ li a:hover { color: black !important; background-color: white; }
   margin-left: auto;
   text-align: center;
   display:flex;
-  border: 10px solid #B396A1;
   margin-bottom: 80px;
 }
 
@@ -360,9 +359,15 @@ li a:hover { color: black !important; background-color: white; }
   margin-bottom: 15px;
 }
 
+.contactSubhead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
 .contactText{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  padding-top: 40px;
 }
 
 
