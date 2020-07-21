@@ -9,23 +9,32 @@
 
 .btnCTA{
   font-weight:bold;
-  color: white;
-  background-color: #395359;
+  color: 050505;
+  background-color: #FFBB22;
 }
 
 .btnSCND{
-  border: #395359 solid 1px;
-  color:  #395359;
+  border: #FFBB22 solid 2px;
+  color:  050505;
   font-weight: bold;
 }
 
 .btnCTA:hover{
-  background-color: #736F49;
-  color: white;
+  background-color: #FFE6AE;
+  color: 050505;
 }
 .btnSCND:hover{
-  border: #736F49 solid 1px;
-  color: #736F49;
+  border: #FFE6AE solid 2px;
+  color: 050505;
+}
+
+.link{ 
+  color: #BD09FF; 
+}
+
+.link:hover {
+  color: #E8C7F5;
+  text-decoration: none;
 }
 
 
@@ -82,6 +91,7 @@ li a:hover { color: black !important; background-color: white; }
   width: 65%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 100px;
 
 }
 
@@ -216,6 +226,7 @@ li a:hover { color: black !important; background-color: white; }
 
 .workPhotoContainer{
   display: flex;
+  padding: 75px 0 75px 0;
 }
 
 .workMobilePhoto{
@@ -223,15 +234,15 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 .Container1{
-  background-color: #7B9EA6;
+  background-color: #E8C7F5;
 }
 
 .Container2{
-  background-color: #F2EBA7;
+  background-color: #F4ECF6;
 }
 
 .Container3{
-  background-color: #B396A1;
+  background-color: #E8C7F5;
 }
 
 .workPhoto{
@@ -273,17 +284,17 @@ li a:hover { color: black !important; background-color: white; }
 
 .aboutPhoto1{
   height: 274px;
-  border: solid 4px #B396A1;
+  border: solid 4px #E8C7F5;
 }
 
 .aboutPhoto2{
   height: 274px;
-  border: solid 4px #F2EBA7;
+  border: solid 4px #F4ECF6;
 }
 
 .aboutPhoto3{
   height: 274px;
-  border: solid 4px #7B9EA6;
+  border: solid 4px #E8C7F5;
 }
 
 .aboutTextRight{
