@@ -3,14 +3,14 @@
 
 .btn{
   font-family: Karla, sans-serif;
-  margin: 2px;
-  width: 215px;
+  margin: 3px;
 }
 
 .btnCTA{
   font-weight:bold;
   color: 050505;
   background-color: #FFBB22;
+  border: #FFBB22 solid 2px;
 }
 
 .btnSCND{
@@ -44,31 +44,29 @@
     background-color:white !important;
 }
 
-.navbar-brand{
-  margin-left: 2rem;
-}
-
 .navbar{
   height: 60px;
+  padding: 0 5%;
+}
+
+.navbar-light .navbar-brand{
+  font-family: 'Karla';
 }
 
 .justify-content-end {
--ms-flex-pack: end!important;
-margin:2%;
-margin-left: auto;
-margin-right: 2%;
+  margin-left: auto;
 }
 
-.nav-item{
-  margin:15px;
+.navbar-brand{
+  margin: 0;
 }
-
-
-
 
 .navbar-nav{
   font-family: Karla;
-  
+}
+
+.nav-item{
+  margin-left: 30px;
 }
 
 .nav-link{
@@ -88,23 +86,15 @@ li a:hover { color: black !important; background-color: white; }
 .introContainer{
   display:grid;
   grid-template-columns: 1fr 1fr;
-  width: 65%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 100px;
-
-}
-
-/*
-.introPhotoBorder{
-  border: 3px #7B9EA6 solid;
 }
 
 .introPhotoContainer{
-  border: 4px #F2EBA7 solid;
+  display: flex;
 }
-*/
-
 .introPhoto{
   height: 475px;
   margin-left: auto;
@@ -389,16 +379,20 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 /*FOOTER Start*/
-.footer{
-  border: 1px lightgray solid;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 30px;
-  font-family: Karla;
+.footerContainer{
+  border-top: 1px lightgray solid;
+  width:100%;
 }
 
-.footerNav{
-  margin-left: 20%;
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  font-family: Karla;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footerContactContainer{
@@ -411,23 +405,23 @@ li a:hover { color: black !important; background-color: white; }
   flex-direction: column;
   margin-left: auto;
   text-align: right;
-  margin-right: 20%;
 }
 
 .footerName{
   font-weight: bold;
 }
 
-.footerResumeSize {
-  margin: 7px;
-  width: 25px;
-  height: 25px;
+.footerIconsContainer{
+  display: flex;
+  margin-left: auto;
 }
-
 .footerLinkedSize {
-  margin: 5px;
   width: 29px;
   height: 29px;
+}
+
+.footerDribbble{
+  margin-left: 5px;
 }
 
 
@@ -441,13 +435,13 @@ li a:hover { color: black !important; background-color: white; }
   position: fixed;
   top: 50%;
   right: 0;
-  padding-right: 6%;
+  padding-right: 3%;
 }
 
 .fixedIcons{
   margin: 3px;
-  width:35px;
-  height:35px;
+  width:30px;
+  height:30px;
 }
 
 /*CSS Animations*/
@@ -504,7 +498,21 @@ li a:hover { color: black !important; background-color: white; }
 }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1000px){
+  .navbar{
+    height: 70px;
+    padding: 15px 2%;
+  }
+  
+  .navbar-collapse{
+    text-align: right;
+  }
+  
+  .navbar-nav{
+    padding: 5px;
+    background-color: white;
+  }
+  
   .myStory{
     margin:0;
     margin-bottom: 20px;
@@ -551,18 +559,7 @@ li a:hover { color: black !important; background-color: white; }
     margin-right: 5%;
     margin-left: 5%;
   }
-}
 
-@media screen and (max-width: 600px) {
-.navbar{
-  height: 70px;
-}
-
-.navbar-collapse{
-  text-align:right;
-  margin-left: 60%;
-  border-radius: 15px 0 0 15px;
-}
 
 /*Intro Section*/
 
@@ -674,11 +671,19 @@ li a:hover { color: black !important; background-color: white; }
   display: none;
 }
 
+.contactTextContainer{
+  padding: 50px 0;
+}
+
 .ContactContainer{
   width:90%;
 }
 .contactHeader{
   font-size: 32px;
+}
+
+.contactSubhead{
+  font-size: 24px;;
 }
 
 .contactText{
