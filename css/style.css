@@ -87,16 +87,14 @@ li a:hover { color: black !important; background-color: white; }
   display:grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 100px;
+  margin: 50px auto 100px auto;
 }
 
 .introPhotoContainer{
   display: flex;
 }
 .introPhoto{
-  height: 475px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -150,24 +148,32 @@ li a:hover { color: black !important; background-color: white; }
 
 /*Work Section START*/
 
-.workHeader{
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 70px;
-}
-
 .workSectionContainer{
   margin-bottom: 100px;
 }
 
 .workCardContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.artpass{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "content apIMG";
+}
+
+.blossom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "blosIMG content";
+}
+
+.wri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "content wriIMG";
 }
 
 .workTextContainerRight{
@@ -176,6 +182,7 @@ li a:hover { color: black !important; background-color: white; }
   margin-top: auto;
   margin-left: 5%;
   margin-bottom: 8px;
+  grid-area: content;
 }
 
 .workTextContainerLeft{
@@ -185,6 +192,7 @@ li a:hover { color: black !important; background-color: white; }
   margin-bottom: 8px;
   margin-right: 5%;
   text-align: right;
+  grid-area: content;
 }
 
 .workTitle{
@@ -209,11 +217,6 @@ li a:hover { color: black !important; background-color: white; }
   font-weight: 300;
 }
 
-.workBtnLeft{
-  margin-left:auto;
-  margin-right: 0;
-}
-
 .workPhotoContainer{
   display: flex;
   padding: 75px 0 75px 0;
@@ -225,14 +228,17 @@ li a:hover { color: black !important; background-color: white; }
 
 .Container1{
   background-color: #E8C7F5;
+  grid-area: apIMG;
 }
 
 .Container2{
   background-color: #F4ECF6;
+  grid-area: blosIMG;
 }
 
 .Container3{
   background-color: #E8C7F5;
+  grid-area: wriIMG;
 }
 
 .workPhoto{
@@ -243,11 +249,31 @@ li a:hover { color: black !important; background-color: white; }
   margin-bottom: 30px;
 }
 
+.workBtnContainer{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.workBtnRight{
+  grid-template-areas: "fake real";
+}
+
+.workBtnLeft{
+ grid-template-areas: "real fake";
+}
+
+.workBtn{
+  grid-area: real;
+}
+
+.fakeWorkBtn{
+  grid-area: fake;
+}
 
 
 
 /*ABOUT.HTML*/
-
+/*
 .myStory{
   margin-top:0;
 }
@@ -318,6 +344,45 @@ li a:hover { color: black !important; background-color: white; }
   font-weight: 300;
   margin-bottom: 0;
 }
+*/
+
+/*ABOUT.HTML V2*/
+
+.aboutContainer{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto 100px auto;
+}
+
+.aboutTextContainer{
+  display:flex;
+  flex-direction: column;
+  margin: auto 0 0 0;
+}
+
+.aboutBodyText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  display: block;
+  font-weight: 200;
+  box-sizing: border-box;
+  margin: .5rem 0 0 0;
+}
+
+.aboutPhotoContainer{
+  display: flex;
+}
+
+.aboutPhoto{
+  height: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
 
 /*CONTACT.HTML*/
 
@@ -513,6 +578,25 @@ li a:hover { color: black !important; background-color: white; }
     background-color: white;
   }
   
+/*ABOUT.HTML V2 MOBILE*/
+.aboutContainer{
+  grid-template-columns: unset;
+}
+
+.aboutTextContainer{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.aboutBodyText{
+  text-align: center;
+}
+
+.aboutPhoto{
+  height: 400px;
+}
+
+  /*
   .myStory{
     margin:0;
     margin-bottom: 20px;
@@ -559,28 +643,20 @@ li a:hover { color: black !important; background-color: white; }
     margin-right: 5%;
     margin-left: 5%;
   }
-
+*/
 
 /*Intro Section*/
 
 .introContainer{
   grid-template-columns: 1fr;
-  width: 90%;
+  width: 80%;
   text-align:center;
   margin-right: auto;
   margin-left: auto;
 }
 
 .introPhoto{
-  height: 350px;
-}
-
-.introPhotoBorder{
-  border: none;
-}
-
-.introPhotoContainer{
-  border: none;
+  width:75%;
 }
 
 .introTextContainer{
@@ -604,7 +680,6 @@ li a:hover { color: black !important; background-color: white; }
 
 .introBtnContainer{
   grid-template-columns: 1fr;
-
 }
 
 .introBtn{
@@ -619,12 +694,9 @@ li a:hover { color: black !important; background-color: white; }
   margin-right:auto;
 }
 
-.workHeader{
-  font-size: 28px;
-}
+/*WORK.HTML MOBILE*/
 
 .workCardContainer{
-  grid-template-columns: 1fr;
   margin-top: 30px;
   margin-bottom: 20px;
   width:90%;
@@ -632,8 +704,38 @@ li a:hover { color: black !important; background-color: white; }
   margin-left: auto;
 }
 
+.artpass{
+  grid-template-areas: "apIMG"
+  "content";
+  grid-template-columns: unset;
+}
+
+.blossom{
+  grid-template-areas: "blosIMG"
+  "content";
+  grid-template-columns: unset;
+}
+
+.wri{
+  grid-template-areas: "wriIMG"
+  "content";
+  grid-template-columns: unset;
+}
+
+.workBtnContainer{
+  display: block;
+}
+
+.fakeWorkBtn{
+  display:none;
+}
+
 .workPhoto{
   height: 250px;
+}
+
+.workPhotoContainer{
+  padding: 25px 0;
 }
 
 .workMobileTextContainer{
@@ -644,19 +746,6 @@ li a:hover { color: black !important; background-color: white; }
   margin-bottom: 20px;
 }
 
-.workMobilePhoto{
-  display: flex;
-}
-
-.workDesktopPhoto{
-  display: none
-}
-
-.workHeader{
-  margin-top: 75px;
-  margin-bottom: 50px;
-}
-
 .workTitle{
   font-size:22px;
 }
@@ -665,11 +754,14 @@ li a:hover { color: black !important; background-color: white; }
   font-size: 16px;
 }
 
-
-
 .fixed{
   display: none;
 }
+
+/*ABOUT.HTML MOBILE*/
+
+
+/*CONTACT.HTML MOBILE*/
 
 .contactTextContainer{
   padding: 50px 0;
@@ -702,3 +794,9 @@ li a:hover { color: black !important; background-color: white; }
 }
 }
 
+@media screen and (max-width: 600px){
+
+  .introPhoto{
+    width: 100%;
+  }
+}
