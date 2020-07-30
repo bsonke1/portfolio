@@ -154,43 +154,42 @@ li a:hover { color: black !important; background-color: white; }
 
 .workCardContainer{
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .artpass{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "content apIMG";
+  border-bottom: 2px solid #E8C7F5;
 }
 
 .blossom {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "blosIMG content";
+  border-bottom: 2px solid #F4ECF6;
 }
 
 .wri {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "content wriIMG";
+  border-bottom: 2px solid #E8C7F5;
 }
 
 .workTextContainerRight{
   display: flex;
   flex-direction: column;
-  margin-top: auto;
-  margin-left: 5%;
-  margin-bottom: 8px;
+  margin: auto 0 30px 5%;
   grid-area: content;
+  
 }
 
 .workTextContainerLeft{
   display: flex;
   flex-direction: column;
-  margin-top: auto;
-  margin-bottom: 8px;
-  margin-right: 5%;
+  margin: auto 5% 30px 0;
   text-align: right;
   grid-area: content;
 }
@@ -219,7 +218,6 @@ li a:hover { color: black !important; background-color: white; }
 
 .workPhotoContainer{
   display: flex;
-  padding: 75px 0 75px 0;
 }
 
 .workMobilePhoto{
@@ -242,11 +240,8 @@ li a:hover { color: black !important; background-color: white; }
 }
 
 .workPhoto{
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  height: 400px;
+  margin: 50px auto;
 }
 
 .workBtnContainer{
